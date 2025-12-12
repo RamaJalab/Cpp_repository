@@ -1,0 +1,15 @@
+#include <iostream>
+
+int main() {
+    std::cout <<"\a" ;
+    std::cout << "HelloWorld!\n" ;
+    std::cout << "*\t\t*\n";
+    std::cout << "*        *\n" ;
+    std::cout << "\a";
+    std::cout << "**********\n";
+    std::cout << "*        *\n";
+    std::cout << "*        *\n";
+    std::cout << "\"m1\"\\\"m2\"";
+
+    return 0;
+}
