@@ -1,7 +1,7 @@
 #include <iostream>
 
+
 int main() {
-    std::cout <<"\a" ;
     std::cout << "HelloWorld!\n" ;
     std::cout << "*\t\t*\n";
     std::cout << "*        *\n" ;
