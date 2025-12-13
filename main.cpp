@@ -10,6 +10,7 @@ int main() {
     std::cout << "*        *\n";
     std::cout << "*        *\n";
     std::cout << "\"m1\"\\\"m2\"";
+    std::cout <<"rama";
 
     return 0;
 }
