@@ -5,11 +5,13 @@ int age=26;
 float monthlysalary=5.500;
 char gender='f';
 bool is_maried=true;
-char your_work;
+string your_work;
 int your_birth_month;
 
 
 int main() {
+    cout << "size of int " << sizeof(int) << endl;
+    cout << " INT Range : (" << INT_MIN <<"," << INT_MAX <<")\n";
     cout << "HelloWorld!\n" ;
     cout << "name is " << name << "\n";
     cout << "age is "  <<age << endl;
@@ -23,14 +25,7 @@ int main() {
     cin >> your_birth_month;
     cout << "your work is " << your_work << endl;
     cout << "your birth month is "  << your_birth_month << endl;
-    cout << "*\t\t*\n";
-    cout << "*        *\n" ;
-    cout << "\a";
-    cout << "**********\n";
-    cout << "*        *\n";
-    cout << "*        *\n";
-    cout << "\"m1\"\\\"m2\"";
-    cout <<"rama";
+    
 
     return 0;
 }
