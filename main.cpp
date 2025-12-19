@@ -1,16 +1,16 @@
 #include <iostream>
-
+using namespace std;
 
 int main() {
-    std::cout << "HelloWorld!\n" ;
-    std::cout << "*\t\t*\n";
-    std::cout << "*        *\n" ;
-    std::cout << "\a";
-    std::cout << "**********\n";
-    std::cout << "*        *\n";
-    std::cout << "*        *\n";
-    std::cout << "\"m1\"\\\"m2\"";
-    std::cout <<"rama";
+    cout << "HelloWorld!\n" ;
+    cout << "*\t\t*\n";
+    cout << "*        *\n" ;
+    cout << "\a";
+    cout << "**********\n";
+    cout << "*        *\n";
+    cout << "*        *\n";
+    cout << "\"m1\"\\\"m2\"";
+    cout <<"rama";
 
     return 0;
 }
