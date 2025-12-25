@@ -7,13 +7,22 @@ char gender='f';
 bool is_maried=true;
 string your_work;
 int your_birth_month;
-int a=25,b=5;
+float a=2,b=5,g,h;
+
 
 int main() {
     cout << "a+b= " << a+b << endl;
     cout << "a-b= " << a-b << endl;
     cout << "a*b= " << a*b << endl;
     cout << "a/b= " << a/b << endl;
+    cout << "please enter num1" << endl;
+    cin >> g ;
+    cout << "please enter num2" << endl;
+    cin >> h;
+    cout << "g+h= " << g+h << endl;
+    cout << "g-h= " << g-h << endl;
+    cout << "g*h= " << g*h << endl;
+    cout << "g/h= " << g/h << endl;
     cout << "size of int " << sizeof(int) << endl;
     cout << " INT Range : (" << INT_MIN <<"," << INT_MAX <<")\n";
     cout << "HelloWorld!\n" ;
