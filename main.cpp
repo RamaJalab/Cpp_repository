@@ -8,13 +8,27 @@ bool is_maried=true;
 string your_work;
 int your_birth_month;
 float a=2,b=5,g,h,r,m,u;
-
-
+int w=10;
 int main() {
-    cout << "enter n1" << endl;
-    cin >> r;
-    cout << "enter n2" << endl;
-    cin >> m;
+    
+    cout << "w : "  << w << endl;
+    int z=w++;
+    cout <<"z=w++ : " << z << endl;
+    cout <<"w : " << w << endl;
+    z=++w;
+    cout << "z=++w : " << z << endl;
+    cout <<"w : " << w << endl;
+    z=w--;
+      cout << "z=w-- : " << z << endl;
+    cout <<"w : " << w << endl;
+    z=--w;
+      cout << "z=--w : " << z << endl;
+    cout <<"w : " << w << endl;
+
+    //cout << "enter n1" << endl;
+    //cin >> r;
+    //cout << "enter n2" << endl;
+    //cin >> m;
     u=r;
     r=m;
     m=u;
