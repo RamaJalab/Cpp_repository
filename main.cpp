@@ -1,20 +1,36 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
-string name="Rama";
-int age=26;
-float monthlysalary=5.500;
-char gender='f';
-bool is_maried=true;
-string your_work;
-int your_birth_month;
-float a=2,b=5,g,h,r,m,u;
-bool A=1,B=0;
-
+// string name="Rama";
+// int age=26;
+// float monthlysalary=5.500;
+// char gender='f';
+// bool is_maried=true;
+// string your_work;
+// int your_birth_month;
+// float a=2,b=5,g,h,r,m,u;
+// bool A=1,B=0;
+int q,s;
+double area;
+double sec,minute,hour,day;
 int main() {
-    cout << (A && B) << endl;
-    cout << (A || B) << endl;
-    cout << !(A && B) << endl;
-    cout << !(A || B) << endl;
+    sec=5000;
+    minute=600.75;
+    hour=70.5;
+    day=5.25;
+    sec=sec+(minute*60)+(hour*3600)+(day*24*3600);
+    cout << sec << endl;
+    
+    cout << "enter s" << endl;
+    cin >> s;
+    cout << "enter q" << endl;
+    cin >> q;
+    area=s*(sqrt(pow(q,2)-pow(s,2))); 
+    cout <<  "area =" << area << endl;
+    // cout << (A && B) << endl;
+    // cout << (A || B) << endl;
+    // cout << !(A && B) << endl;
+    // cout << !(A || B) << endl;
     // // int w=10;
     // // cout << "w : "  << w << endl;
     // //  int z=w++;
