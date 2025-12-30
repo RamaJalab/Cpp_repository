@@ -13,14 +13,62 @@ using namespace std;
 // int q,s;
 // double area;
 // double sec,minute,hour,day;
-enum ginder {male,female};
-enum status {single,married};
+enum enginder {male,female};
+enum enstatus {single,married};
+struct stName
+{
+ string firstname;
+ string lastname;   /* data */
+};
+struct stAge
+{
+   int Age;
+   string birthday;
+   stName name; /* data */
+};
+struct stStatus
+{
+   enginder ginder;
+   enstatus Status;
+   stAge age; /* data */
+};
+struct stStudy
+{
+    string unv;
+    string certifi;
+    string exper;
+    stStatus status;
+    /* data */
+};
+
+
+
 int main() {
-    status mystatus;
-    ginder myginder;
-    mystatus=status::single;
-    myginder=ginder::female;
-    cout << mystatus << " " << myginder;
+stStudy person;
+person.status.age.name.firstname="Rama";
+person.status.age.name.lastname="Jalab";
+person.status.age.birthday="1999/8/25";
+person.status.age.Age=26;
+person.status.ginder=enginder::female;
+person.status.Status=enstatus::married;
+person.certifi="A1 Deutsch .. C & PYTHON from corsera";
+person.unv="Mechatronics eng";
+person.exper="Drone project";
+cout << person.status.age.name.firstname << endl;
+cout << person.status.age.name.lastname << endl;
+cout << person.status.age.birthday << endl;
+cout << person.status.age.Age << endl;
+cout << person.status.ginder << endl;
+cout << person.status.Status << endl;
+cout << person.certifi << endl;
+cout << person.unv << endl;
+cout << person.exper << endl;
+
+
+   
+    // mystatus=enstatus::single;
+    // myginder=enginder::female;
+    // cout << mystatus << " " << myginder;
 
 
     //  struct car
