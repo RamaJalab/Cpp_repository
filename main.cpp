@@ -10,23 +10,52 @@ using namespace std;
 // int your_birth_month;
 // float a=2,b=5,g,h,r,m,u;
 // bool A=1,B=0;
-int q,s;
-double area;
-double sec,minute,hour,day;
+// int q,s;
+// double area;
+// double sec,minute,hour,day;
 int main() {
-    sec=5000;
-    minute=600.75;
-    hour=70.5;
-    day=5.25;
-    sec=sec+(minute*60)+(hour*3600)+(day*24*3600);
-    cout << sec << endl;
+     struct car
+    {
+     string brand;
+     string  model;
+     int year;  /* data */
+    };
+    car mycar;
+    mycar.brand="BMW";
+    mycar.model="X5";
+    mycar.year=2000;
+    cout << mycar.brand << " " << mycar.model << " " << mycar.year << endl;
+    struct CV
+    {
+     string name;
+     int age;
+     string study;
+     string ginder; 
+     int birthmonth;  /* data */
+    };
     
-    cout << "enter s" << endl;
-    cin >> s;
-    cout << "enter q" << endl;
-    cin >> q;
-    area=s*(sqrt(pow(q,2)-pow(s,2))); 
-    cout <<  "area =" << area << endl;
+    CV yourcv;
+    cout << "your name: " <<endl;
+    cin >> yourcv.name;
+    cout << "your age:" << endl;
+    cin >> yourcv.age;
+    cout << "your ginder:" <<endl;
+    cin >> yourcv.ginder;
+    cout << "your birthmonth:" <<endl;
+    cin >> yourcv.birthmonth;
+    // sec=5000;
+    // minute=600.75;
+    // hour=70.5;
+    // day=5.25;
+    // sec=sec+(minute*60)+(hour*3600)+(day*24*3600);
+    // cout << sec << endl;
+    
+    // cout << "enter s" << endl;
+    // cin >> s;
+    // cout << "enter q" << endl;
+    // cin >> q;
+    // area=s*(sqrt(pow(q,2)-pow(s,2))); 
+    // cout <<  "area =" << area << endl;
     // cout << (A && B) << endl;
     // cout << (A || B) << endl;
     // cout << !(A && B) << endl;
