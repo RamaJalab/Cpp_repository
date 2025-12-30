@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <string>
 using namespace std;
 // string name="Rama";
 // int age=26;
@@ -13,56 +14,77 @@ using namespace std;
 // int q,s;
 // double area;
 // double sec,minute,hour,day;
-enum enginder {male,female};
-enum enstatus {single,married};
-struct stName
-{
- string firstname;
- string lastname;   /* data */
-};
-struct stAge
-{
-   int Age;
-   string birthday;
-   stName name; /* data */
-};
-struct stStatus
-{
-   enginder ginder;
-   enstatus Status;
-   stAge age; /* data */
-};
-struct stStudy
-{
-    string unv;
-    string certifi;
-    string exper;
-    stStatus status;
-    /* data */
-};
-
+// enum enginder {male,female};
+// enum enstatus {single,married};
+// struct stName
+// {
+//  string firstname;
+//  string lastname;   /* data */
+// };
+// struct stAge
+// {
+//    int Age;
+//    string birthday;
+//    stName name; /* data */
+// };
+// struct stStatus
+// {
+//    enginder ginder;
+//    enstatus Status;
+//    stAge age; /* data */
+// };
+// struct stStudy
+// {
+//     string unv;
+//     string certifi;
+//     string exper;
+//     stStatus status;
+//     /* data */
+// };
+string code="1234.5678";
+int num1=235;
+double num2=124.256;
+float num3=15.68;
 
 
 int main() {
-stStudy person;
-person.status.age.name.firstname="Rama";
-person.status.age.name.lastname="Jalab";
-person.status.age.birthday="1999/8/25";
-person.status.age.Age=26;
-person.status.ginder=enginder::female;
-person.status.Status=enstatus::married;
-person.certifi="A1 Deutsch .. C & PYTHON from corsera";
-person.unv="Mechatronics eng";
-person.exper="Drone project";
-cout << person.status.age.name.firstname << endl;
-cout << person.status.age.name.lastname << endl;
-cout << person.status.age.birthday << endl;
-cout << person.status.age.Age << endl;
-cout << person.status.ginder << endl;
-cout << person.status.Status << endl;
-cout << person.certifi << endl;
-cout << person.unv << endl;
-cout << person.exper << endl;
+    cout << code << endl;
+    int code_int=stoi(code);
+    cout << code_int <<endl;
+    float code_float=stof(code);
+    cout << code_float << endl;
+    double code_double=stod(code);
+    cout << code_double << endl;
+    string str1,str2;
+    cout << num1 << endl;
+    str1=to_string(num1);
+    cout << str1 << endl;
+    cout << num2 << endl;
+    str2=to_string(num2);
+    cout << str2 << endl;
+    cout << num3 << endl;
+    int num4;
+    num4=int(num3);
+    cout << num4 << endl;
+// stStudy person;
+// person.status.age.name.firstname="Rama";
+// person.status.age.name.lastname="Jalab";
+// person.status.age.birthday="1999/8/25";
+// person.status.age.Age=26;
+// person.status.ginder=enginder::female;
+// person.status.Status=enstatus::married;
+// person.certifi="A1 Deutsch .. C & PYTHON from corsera";
+// person.unv="Mechatronics eng";
+// person.exper="Drone project";
+// cout << person.status.age.name.firstname << endl;
+// cout << person.status.age.name.lastname << endl;
+// cout << person.status.age.birthday << endl;
+// cout << person.status.age.Age << endl;
+// cout << person.status.ginder << endl;
+// cout << person.status.Status << endl;
+// cout << person.certifi << endl;
+// cout << person.unv << endl;
+// cout << person.exper << endl;
 
 
    
