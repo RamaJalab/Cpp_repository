@@ -13,36 +13,42 @@ using namespace std;
 // int q,s;
 // double area;
 // double sec,minute,hour,day;
+enum ginder {male,female};
+enum status {single,married};
 int main() {
-     struct car
-    {
-     string brand;
-     string  model;
-     int year;  /* data */
-    };
-    car mycar;
-    mycar.brand="BMW";
-    mycar.model="X5";
-    mycar.year=2000;
-    cout << mycar.brand << " " << mycar.model << " " << mycar.year << endl;
-    struct CV
-    {
-     string name;
-     int age;
-     string study;
-     string ginder; 
-     int birthmonth;  /* data */
-    };
+    status mystatus;
+    ginder myginder;
+    mystatus=status::single;
+    myginder=ginder::female;
+    cout << mystatus << " " << myginder;
+
+
+    //  struct car
+    // {
+    //  string brand;
+    //  string  model;
+    //  int year;  /* data */
+    // };
+    // car mycar;
+    // mycar.brand="BMW";
+    // mycar.model="X5";
+    // mycar.year=2000;
+    // cout << mycar.brand << " " << mycar.model << " " << mycar.year << endl;
+    // struct CV
+    // {
+    //  string name;
+    //  int age;
+    //  string study;
+    //  int birthmonth;  /* data */
+    // };
     
-    CV yourcv;
-    cout << "your name: " <<endl;
-    cin >> yourcv.name;
-    cout << "your age:" << endl;
-    cin >> yourcv.age;
-    cout << "your ginder:" <<endl;
-    cin >> yourcv.ginder;
-    cout << "your birthmonth:" <<endl;
-    cin >> yourcv.birthmonth;
+    // CV yourcv;
+    // cout << "your name: " <<endl;
+    // cin >> yourcv.name;
+    // cout << "your age:" << endl;
+    // cin >> yourcv.age;
+    // cout << "your birthmonth:" <<endl;
+    // cin >> yourcv.birthmonth;
     // sec=5000;
     // minute=600.75;
     // hour=70.5;
