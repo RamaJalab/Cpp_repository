@@ -45,31 +45,40 @@ using namespace std;
 // int num1=235;
 // double num2=124.256;
 // float num3=15.68;
-string N="123456789";
-
+// string N="123456789";
+void fun1()
+{
+    cout << "this is my first function in cpp " << endl;
+}
+void fun2()
+{
+    cout << "my favourite hobby is coding :-)" << endl;
+}
 int main() {
-    cout << N.length() << endl;
-    cout << N[2];
-    int a=stoi(N);
-    a++;
-    cout <<a << endl;
-   int sum= 5 + stoi(N);
-    cout << sum << endl;
-    string b="10.5";
-    string c="11.8";
-    float minus=stof(c)-stof(b);
-    cout << minus <<endl;
-    int d=round(minus);
-    cout << d << endl;
-    int e=floor(minus);
-    cout << e << endl;
-    int f =ceil(minus);
-    cout << f << endl;
-    string Full_Name;
-    cout << "please enter your full name" << endl;
-    cin >> Full_Name;
-    //getline(cin,Full_Name);
-    cout << Full_Name << endl;
+    fun1();
+    fun2();
+//     cout << N.length() << endl;
+//     cout << N[2];
+//     int a=stoi(N);
+//     a++;
+//     cout <<a << endl;
+//    int sum= 5 + stoi(N);
+//     cout << sum << endl;
+//     string b="10.5";
+//     string c="11.8";
+//     float minus=stof(c)-stof(b);
+//     cout << minus <<endl;
+//     int d=round(minus);
+//     cout << d << endl;
+//     int e=floor(minus);
+//     cout << e << endl;
+//     int f =ceil(minus);
+//     cout << f << endl;
+//     string Full_Name;
+//     cout << "please enter your full name" << endl;
+//    // cin >> Full_Name;
+//     getline(cin,Full_Name);
+//     cout << Full_Name << endl;
 
     // cout << code << endl;
     // int code_int=stoi(code);
