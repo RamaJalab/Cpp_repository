@@ -74,11 +74,20 @@ int main() {
 //     cout << e << endl;
 //     int f =ceil(minus);
 //     cout << f << endl;
-//     string Full_Name;
-//     cout << "please enter your full name" << endl;
-//    // cin >> Full_Name;
-//     getline(cin,Full_Name);
-//     cout << Full_Name << endl;
+   string Full_Name;
+   int age;
+   string country;
+   char gender;
+   cout << "enter your gender \n";
+   cin >> gender;
+   cout << "please enter your full name \n" << endl;
+   cin >> Full_Name;
+   cin.ignore(1,'\n');
+    getline(cin,Full_Name);
+    cout << "enter your age \n";
+    cin >> age;
+    cout << "enter your country \n";
+    cin >> country;
 
     // cout << code << endl;
     // int code_int=stoi(code);
