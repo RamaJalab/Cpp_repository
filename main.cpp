@@ -54,9 +54,52 @@ void fun2()
 {
     cout << "my favourite hobby is coding :-)" << endl;
 }
+string fun3()
+{
+    cout << "this function return string variable\n";
+    return "this is my first returing function\n";
+}
+int fun4()
+{
+    int a=10,b=5;
+    cout << "this function return multi between a & b\n";
+    return a*b;
+}
+float fun5()
+{
+    float c=6.4,d=3.7;
+    cout << "this function return minus between c & d \n";
+    return ceil(c-d);
+}
+int fun6()
+{
+   int y=fun4()+fun5();
+    return y;
+}
+float fun7()
+{
+    float num1,num2;
+    cout << "enter num1 \n";
+    cin >> num1;
+    cout << "enter num2 \n";
+    cin >> num2;
+    return num1/num2;
+}
 int main() {
     fun1();
     fun2();
+    fun3();
+    //fun4();
+   // fun5();
+   //fun7();
+    int g=fun5();
+    cout << g << endl;
+    int res=fun4() + 5;
+    cout << res << endl;
+    int x=fun6();
+    cout << x << endl;
+    float z=fun7();
+    cout << z <<endl;
 //     cout << N.length() << endl;
 //     cout << N[2];
 //     int a=stoi(N);
@@ -74,20 +117,20 @@ int main() {
 //     cout << e << endl;
 //     int f =ceil(minus);
 //     cout << f << endl;
-   string Full_Name;
-   int age;
-   string country;
-   char gender;
-   cout << "enter your gender \n";
-   cin >> gender;
-   cout << "please enter your full name \n" << endl;
-   cin >> Full_Name;
-   cin.ignore(1,'\n');
-    getline(cin,Full_Name);
-    cout << "enter your age \n";
-    cin >> age;
-    cout << "enter your country \n";
-    cin >> country;
+//    string Full_Name;
+//    int age;
+//    string country;
+//    char gender;
+//    cout << "enter your gender \n";
+//    cin >> gender;
+//    cout << "please enter your full name \n";
+//    cin >> Full_Name;
+//    cin.ignore(1,'\n');
+//     getline(cin,Full_Name);
+//     cout << "enter your age \n";
+//     cin >> age;
+//     cout << "enter your country \n";
+//     cin >> country;
 
     // cout << code << endl;
     // int code_int=stoi(code);
