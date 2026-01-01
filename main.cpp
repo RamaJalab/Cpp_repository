@@ -89,7 +89,18 @@ int fun8(int n1, int n2)
 {
     return n1+n2;
 }
+int f=50;
+int fun9()
+{
+    int f=5;
+    cout << "f in fun9 =" << f <<endl;
+    return f;
+}
 int main() {
+    int f=20;
+    cout << "local f =" << f << endl;
+    cout << "global f=" << ::f << endl;
+    fun9();
     fun1();
     fun2();
     fun3();
