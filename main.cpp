@@ -46,77 +46,105 @@ using namespace std;
 // double num2=124.256;
 // float num3=15.68;
 // string N="123456789";
-void fun1()
+// void fun1()
+// {
+//     cout << "this is my first function in cpp " << endl;
+// }
+// void fun2()
+// {
+//     cout << "my favourite hobby is coding :-)" << endl;
+// }
+// string fun3()
+// {
+//     cout << "this function return string variable\n";
+//     return "this is my first returing function\n";
+// }
+// int fun4()
+// {
+//     int a=10,b=5;
+//     cout << "this function return multi between a & b\n";
+//     return a*b;
+// }
+// float fun5()
+// {
+//     float c=6.4,d=3.7;
+//     cout << "this function return minus between c & d \n";
+//     return ceil(c-d);
+// }
+// int fun6()
+// {
+//    int y=fun4()+fun5();
+//     return y;
+// }
+// float fun7()
+// {
+//     float num1,num2;
+//     cout << "enter num1 \n";
+//     cin >> num1;
+//     cout << "enter num2 \n";
+//     cin >> num2;
+//     return num1/num2;
+// }
+// int fun8(int n1, int n2)
+// {
+//     return n1+n2;
+// }
+// int f=50;
+// int fun9()
+// {
+//     int f=5;
+//     cout << "f in fun9 =" << f <<endl;
+//     return f;
+// }
+void  Swapfun(int &a,int &b,int &c)
 {
-    cout << "this is my first function in cpp " << endl;
+    c=a;
+    a=b;
+    b=c;
+    cout << " a = " << a << "  "  << "b = " << b << endl;
 }
-void fun2()
+void incfun(int x,int &r)
 {
-    cout << "my favourite hobby is coding :-)" << endl;
+    r=x+1;
+    cout << " r =" << "  " << r << endl;
 }
-string fun3()
+void resfun(int &n1,int &n2,int &n3)
 {
-    cout << "this function return string variable\n";
-    return "this is my first returing function\n";
-}
-int fun4()
-{
-    int a=10,b=5;
-    cout << "this function return multi between a & b\n";
-    return a*b;
-}
-float fun5()
-{
-    float c=6.4,d=3.7;
-    cout << "this function return minus between c & d \n";
-    return ceil(c-d);
-}
-int fun6()
-{
-   int y=fun4()+fun5();
-    return y;
-}
-float fun7()
-{
-    float num1,num2;
-    cout << "enter num1 \n";
-    cin >> num1;
-    cout << "enter num2 \n";
-    cin >> num2;
-    return num1/num2;
-}
-int fun8(int n1, int n2)
-{
-    return n1+n2;
-}
-int f=50;
-int fun9()
-{
-    int f=5;
-    cout << "f in fun9 =" << f <<endl;
-    return f;
+    n1=n2=n3=0;
+    cout << "n1 =" << n1 << "n2 =" << n2 << "n3 =" << n3 <<endl;
 }
 int main() {
-    int f=20;
-    cout << "local f =" << f << endl;
-    cout << "global f=" << ::f << endl;
-    fun9();
-    fun1();
-    fun2();
-    fun3();
-    //fun4();
-   // fun5();
-   //fun7();
-   int n3=fun8(5,10);
-   cout << n3 << endl;
-    int g=fun5();
-    cout << g << endl;
-    int res=fun4() + 5;
-    cout << res << endl;
-    int x=fun6();
-    cout << x << endl;
-    float z=fun7();
-    cout << z <<endl;
+    int s=5;
+    int q=10;
+    int m;
+   Swapfun(s,q,m);
+    cout <<" s = " << s <<  "  "  << "q = " << q << endl;
+    int y=5,p;
+    incfun(y,p);
+    cout << "p =" << "  " << p << endl;
+    int a,b,c;
+    resfun(a,b,c);
+    cout << "a =" << a << "b = " << b <<"c = " << c <<endl;
+//     int f=20;
+//     cout << "local f =" << f << endl;
+//     cout << "global f=" << ::f << endl;
+//     fun9();
+//     fun1();
+//     fun2();
+//     fun3();
+//     //fun4();
+//    // fun5();
+//    //fun7();
+//    int n3=fun8(5,10);
+//    cout << n3 << endl;
+//     int g=fun5();
+//     cout << g << endl;
+//     int res=fun4() + 5;
+//     cout << res << endl;
+//     int x=fun6();
+//     cout << x << endl;
+//     float z=fun7();
+//     cout << z <<endl;
 
 //     cout << N.length() << endl;
 //     cout << N[2];
