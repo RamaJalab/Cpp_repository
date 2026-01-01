@@ -85,6 +85,10 @@ float fun7()
     cin >> num2;
     return num1/num2;
 }
+int fun8(int n1, int n2)
+{
+    return n1+n2;
+}
 int main() {
     fun1();
     fun2();
@@ -92,6 +96,8 @@ int main() {
     //fun4();
    // fun5();
    //fun7();
+   int n3=fun8(5,10);
+   cout << n3 << endl;
     int g=fun5();
     cout << g << endl;
     int res=fun4() + 5;
@@ -100,6 +106,7 @@ int main() {
     cout << x << endl;
     float z=fun7();
     cout << z <<endl;
+
 //     cout << N.length() << endl;
 //     cout << N[2];
 //     int a=stoi(N);
