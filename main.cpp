@@ -113,35 +113,44 @@ using namespace std;
 //     n1=n2=n3=0;
 //     cout << "n1 =" << n1 << "n2 =" << n2 << "n3 =" << n3 <<endl;
 // }
-struct stper
-{
-  string fullname;
-  int age;
-  char gender;  /* data */
-};
-void READperfun(stper &info ) 
-{
-    cout << "enter fullname : \n";
-    getline(cin, info.fullname);
-    cout << "enter age : \n";
-    cin >> info.age;
-    cout << "enter gender : \n";
-    cin >> info.gender;
+// struct stper
+// {
+//   string fullname;
+//   int age;
+//   char gender;  /* data */
+// };
+// void READperfun(stper &info ) 
+// {
+//     cout << "enter fullname : \n";
+//     getline(cin, info.fullname);
+//     cout << "enter age : \n";
+//     cin >> info.age;
+//     cout << "enter gender : \n";
+//     cin >> info.gender;
 
-}
-void PRINTperfun(stper info)
-{
-    cout <<"****************************\n";
-    cout << "fullname is : " << info.fullname <<endl;
-    cout << "age is :" << info.age << endl;
-    cout << "gender is :" << info.gender <<endl;
-    cout <<"****************************\n";
-}
-
+// }
+// void PRINTperfun(stper info)
+// {
+//     cout <<"****************************\n";
+//     cout << "fullname is : " << info.fullname <<endl;
+//     cout << "age is :" << info.age << endl;
+//     cout << "gender is :" << info.gender <<endl;
+//     cout <<"****************************\n";
+// }
+int x[3];
 int main() {
-    stper perinfo;
-    READperfun(perinfo);
-    PRINTperfun(perinfo);
+    cout << "enter x[0] =\n";
+    cin >> x[0];
+    cout << "enter x[1] =\n";
+    cin >> x[1];
+    cout << "enter x[2] =\n";
+    cin >> x[2];
+    int average_x;
+    average_x=(x[0]+x[1]+x[2])/3;
+    cout << "average_x =" << average_x <<endl;
+    // stper perinfo;
+    // READperfun(perinfo);
+    // PRINTperfun(perinfo);
     
 //     int s=5;
 //     int q=10;
