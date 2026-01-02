@@ -137,31 +137,74 @@ using namespace std;
 //     cout << "gender is :" << info.gender <<endl;
 //     cout <<"****************************\n";
 // }
-void readfun(float x[30])
-{
-    cout << "enter x[0] =\n";
-    cin >> x[0];
-    cout << "enter x[1] =\n";
-    cin >> x[1];
-    cout << "enter x[2] =\n";
-    cin >> x[2];
-}
-float avefun(float x[3],float &ave)
-{
-    ave=  (x[0]+x[1]+x[2])/3;
-    return ave;
-}
-void printfun(float ave)
-{
-    cout << "ave is :" << ave;
-}
+// void readfun(float x[30])
+// {
+//     cout << "enter x[0] =\n";
+//     cin >> x[0];
+//     cout << "enter x[1] =\n";
+//     cin >> x[1];
+//     cout << "enter x[2] =\n";
+//     cin >> x[2];
+// }
+// float avefun(float x[3],float &ave)
+// {
+//     ave=  (x[0]+x[1]+x[2])/3;
+//     return ave;
+// }
+// void printfun(float ave)
+// {
+//     cout << "ave is :" << ave;
+// }
 //int x[3];
+struct stper
+{
+  string firstname;
+  string lastname;
+  int age;
+  char gender;  /* data */
+};
+void infofun(stper &info)
+{
+    cout << "enter first name : \n";
+    cin.ignore(1,'\n');
+    getline(cin, info.firstname);
+    cout << "enter last name : \n";
+    getline(cin,info.lastname);
+    cout << "enter age : \n";
+    cin >> info.age;
+    cout << "enter gender : \n";
+    cin >> info.gender;  
+}
+void READperfun(stper person[2] ) 
+{
+    infofun(person[0]);
+    infofun(person[1]);
+   
+}
+void printfun(stper info)
+{
+    cout <<"****************************\n";
+    cout << "first name is : " << info.firstname <<endl;
+    cout << "last name is :"  << info.lastname << endl;
+    cout << "age is :" << info.age<< endl;
+    cout << "gender is :" <<info.gender <<endl;
+    cout <<"****************************\n";
+
+}
+void printperfun(stper person[2])
+{
+    printfun(person[0]);
+    printfun(person[1]);
+}
 int main() {
-    float x[3];
-    float ave;
-    readfun(x);
-    avefun(x,ave);
-    printfun(ave);
+    stper person[2];
+    READperfun(person);
+    printperfun(person);
+  //  float x[3];
+    // float ave;
+    // readfun(x);
+    // avefun(x,ave);
+    // printfun(ave);
 
     // cout << "enter x[0] =\n";
     // cin >> x[0];
