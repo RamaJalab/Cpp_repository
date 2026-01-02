@@ -96,35 +96,64 @@ using namespace std;
 //     cout << "f in fun9 =" << f <<endl;
 //     return f;
 // }
-void  Swapfun(int &a,int &b,int &c)
+// void  Swapfun(int &a,int &b,int &c)
+// {
+//     c=a;
+//     a=b;
+//     b=c;
+//     cout << " a = " << a << "  "  << "b = " << b << endl;
+// }
+// void incfun(int x,int &r)
+// {
+//     r=x+1;
+//     cout << " r =" << "  " << r << endl;
+// }
+// void resfun(int &n1,int &n2,int &n3)
+// {
+//     n1=n2=n3=0;
+//     cout << "n1 =" << n1 << "n2 =" << n2 << "n3 =" << n3 <<endl;
+// }
+struct stper
 {
-    c=a;
-    a=b;
-    b=c;
-    cout << " a = " << a << "  "  << "b = " << b << endl;
-}
-void incfun(int x,int &r)
+  string fullname;
+  int age;
+  char gender;  /* data */
+};
+void READperfun(stper &info ) 
 {
-    r=x+1;
-    cout << " r =" << "  " << r << endl;
+    cout << "enter fullname : \n";
+    getline(cin, info.fullname);
+    cout << "enter age : \n";
+    cin >> info.age;
+    cout << "enter gender : \n";
+    cin >> info.gender;
+
 }
-void resfun(int &n1,int &n2,int &n3)
+void PRINTperfun(stper info)
 {
-    n1=n2=n3=0;
-    cout << "n1 =" << n1 << "n2 =" << n2 << "n3 =" << n3 <<endl;
+    cout <<"****************************\n";
+    cout << "fullname is : " << info.fullname <<endl;
+    cout << "age is :" << info.age << endl;
+    cout << "gender is :" << info.gender <<endl;
+    cout <<"****************************\n";
 }
+
 int main() {
-    int s=5;
-    int q=10;
-    int m;
-   Swapfun(s,q,m);
-    cout <<" s = " << s <<  "  "  << "q = " << q << endl;
-    int y=5,p;
-    incfun(y,p);
-    cout << "p =" << "  " << p << endl;
-    int a,b,c;
-    resfun(a,b,c);
-    cout << "a =" << a << "b = " << b <<"c = " << c <<endl;
+    stper perinfo;
+    READperfun(perinfo);
+    PRINTperfun(perinfo);
+    
+//     int s=5;
+//     int q=10;
+//     int m;
+//    Swapfun(s,q,m);
+//     cout <<" s = " << s <<  "  "  << "q = " << q << endl;
+//     int y=5,p;
+//     incfun(y,p);
+//     cout << "p =" << "  " << p << endl;
+//     int a,b,c;
+//     resfun(a,b,c);
+//     cout << "a =" << a << "b = " << b <<"c = " << c <<endl;
 //     int f=20;
 //     cout << "local f =" << f << endl;
 //     cout << "global f=" << ::f << endl;
