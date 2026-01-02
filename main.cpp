@@ -137,17 +137,41 @@ using namespace std;
 //     cout << "gender is :" << info.gender <<endl;
 //     cout <<"****************************\n";
 // }
-int x[3];
-int main() {
+void readfun(float x[30])
+{
     cout << "enter x[0] =\n";
     cin >> x[0];
     cout << "enter x[1] =\n";
     cin >> x[1];
     cout << "enter x[2] =\n";
     cin >> x[2];
-    int average_x;
-    average_x=(x[0]+x[1]+x[2])/3;
-    cout << "average_x =" << average_x <<endl;
+}
+float avefun(float x[3],float &ave)
+{
+    ave=  (x[0]+x[1]+x[2])/3;
+    return ave;
+}
+void printfun(float ave)
+{
+    cout << "ave is :" << ave;
+}
+//int x[3];
+int main() {
+    float x[3];
+    float ave;
+    readfun(x);
+    avefun(x,ave);
+    printfun(ave);
+
+    // cout << "enter x[0] =\n";
+    // cin >> x[0];
+    // cout << "enter x[1] =\n";
+    // cin >> x[1];
+    // cout << "enter x[2] =\n";
+    // cin >> x[2];
+    // int average_x;
+    // average_x=(x[0]+x[1]+x[2])/3;
+    // cout << "average_x =" << average_x <<endl;
     // stper perinfo;
     // READperfun(perinfo);
     // PRINTperfun(perinfo);
