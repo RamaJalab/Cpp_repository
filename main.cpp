@@ -156,50 +156,65 @@ using namespace std;
 //     cout << "ave is :" << ave;
 // }
 //int x[3];
-struct stper
-{
-  string firstname;
-  string lastname;
-  int age;
-  char gender;  /* data */
-};
-void infofun(stper &info)
-{
-    cout << "enter first name : \n";
-    cin.ignore(1,'\n');
-    getline(cin, info.firstname);
-    cout << "enter last name : \n";
-    getline(cin,info.lastname);
-    cout << "enter age : \n";
-    cin >> info.age;
-    cout << "enter gender : \n";
-    cin >> info.gender;  
-}
-void READperfun(stper person[2] ) 
-{
-    infofun(person[0]);
-    infofun(person[1]);
+// struct stper
+// {
+//   string firstname;
+//   string lastname;
+//   int age;
+//   char gender;  /* data */
+// };
+// void infofun(stper &info)
+// {
+//     cout << "enter first name : \n";
+//     cin.ignore(1,'\n');
+//     getline(cin, info.firstname);
+//     cout << "enter last name : \n";
+//     getline(cin,info.lastname);
+//     cout << "enter age : \n";
+//     cin >> info.age;
+//     cout << "enter gender : \n";
+//     cin >> info.gender;  
+// }
+// void READperfun(stper person[2] ) 
+// {
+//     infofun(person[0]);
+//     infofun(person[1]);
    
-}
-void printfun(stper info)
-{
-    cout <<"****************************\n";
-    cout << "first name is : " << info.firstname <<endl;
-    cout << "last name is :"  << info.lastname << endl;
-    cout << "age is :" << info.age<< endl;
-    cout << "gender is :" <<info.gender <<endl;
-    cout <<"****************************\n";
+// }
+// void printfun(stper info)
+// {
+//     cout <<"****************************\n";
+//     cout << "first name is : " << info.firstname <<endl;
+//     cout << "last name is :"  << info.lastname << endl;
+//     cout << "age is :" << info.age<< endl;
+//     cout << "gender is :" <<info.gender <<endl;
+//     cout <<"****************************\n";
 
-}
-void printperfun(stper person[2])
-{
-    printfun(person[0]);
-    printfun(person[1]);
-}
+// }
+// void printperfun(stper person[2])
+// {
+//     printfun(person[0]);
+//     printfun(person[1]);
+// }
 int main() {
-    stper person[2];
-    READperfun(person);
-    printperfun(person);
+    int x=6;
+    if(x<2)
+    {
+        cout << "x>2\n";
+    }
+    else if(x==5)
+    {
+        cout << "x<5\n";/* code */
+    }
+    else if(x>3)
+    {
+     cout << "ok :-)\n";   /* code */
+    }
+    
+    
+    // stper person[2];
+    // READperfun(person);
+    // printperfun(person);
   //  float x[3];
     // float ave;
     // readfun(x);
