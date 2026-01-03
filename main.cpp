@@ -196,20 +196,46 @@ using namespace std;
 //     printfun(person[0]);
 //     printfun(person[1]);
 // }
+enum encolor {red=1,blue=2,green=3,yellow=4};
 int main() {
-    int x=6;
-    if(x<2)
-    {
-        cout << "x>2\n";
-    }
-    else if(x==5)
-    {
-        cout << "x<5\n";/* code */
-    }
-    else if(x>3)
-    {
-     cout << "ok :-)\n";   /* code */
-    }
+int s;
+encolor color;
+
+cin >>s;
+
+color=(encolor)s;
+if(color==encolor::red)
+{
+    system("color 4F");
+}
+else if(color==encolor::blue)
+{
+    /* code */system("color 1F");
+}
+else if(color==encolor::green)
+{
+    /* code */system("color 2F");
+}
+else if(color==encolor::yellow)
+{
+    /* code */system("color F");
+}
+else{
+    cout << "Sorry:-( \n";
+}
+    // int x=6;
+    // if(x<2)
+    // {
+    //     cout << "x>2\n";
+    // }
+    // else if(x==5)
+    // {
+    //     cout << "x<5\n";/* code */
+    // }
+    // else if(x>3)
+    // {
+    //  cout << "ok :-)\n";   /* code */
+    // }
     
     
     // stper person[2];
