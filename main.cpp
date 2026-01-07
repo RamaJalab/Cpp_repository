@@ -204,25 +204,43 @@ encolor color;
 cin >>s;
 
 color=(encolor)s;
-if(color==encolor::red)
+switch (color)
 {
-    system("color 4F");
+case encolor::blue:
+    /* code */cout << " color is blue \n ";
+    break;
+case encolor::red:
+cout << " color is red \n";
+break;
+case encolor::green: 
+cout << "color is green \n";
+break;
+case encolor::yellow :
+cout << "color is yellew \n";
+break;
+default:
+cout << "sorry :-( \n";
+    break;
 }
-else if(color==encolor::blue)
-{
-    /* code */system("color 1F");
-}
-else if(color==encolor::green)
-{
-    /* code */system("color 2F");
-}
-else if(color==encolor::yellow)
-{
-    /* code */system("color F");
-}
-else{
-    cout << "Sorry:-( \n";
-}
+// if(color==encolor::red)
+// {
+//     system("color 4F");
+// }
+// else if(color==encolor::blue)
+// {
+//     /* code */system("color 1F");
+// }
+// else if(color==encolor::green)
+// {
+//     /* code */system("color 2F");
+// }
+// else if(color==encolor::yellow)
+// {
+//     /* code */system("color F");
+// }
+// else{
+//     cout << "Sorry:-( \n";
+// }
     // int x=6;
     // if(x<2)
     // {
