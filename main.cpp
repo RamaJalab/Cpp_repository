@@ -196,32 +196,105 @@ using namespace std;
 //     printfun(person[0]);
 //     printfun(person[1]);
 // }
-enum encolor {red=1,blue=2,green=3,yellow=4};
-int main() {
-int s;
-encolor color;
-
-cin >>s;
-
-color=(encolor)s;
-switch (color)
+// enum encolor {red=1,blue=2,green=3,yellow=4};
+void dayfun()
 {
-case encolor::blue:
-    /* code */cout << " color is blue \n ";
-    break;
-case encolor::red:
-cout << " color is red \n";
-break;
-case encolor::green: 
-cout << "color is green \n";
-break;
-case encolor::yellow :
-cout << "color is yellew \n";
-break;
-default:
-cout << "sorry :-( \n";
-    break;
+cout << "*************************\n";
+cout << "   THE DAYS OF WEEK     \n ";
+cout <<"Sunday \n";
+cout <<"Monday \n";
+cout <<"Tuesday \n";
+cout <<"Wednesday \n";
+cout <<"Thursday \n";
+cout <<"Friday \n";
+cout <<"Saturday \n" ; 
+cout <<"**************************\n";
+cout <<"please enter your day? \n";  
 }
+// void userfun(int &s)
+// {
+//     dayfun();
+//     cin >>s;
+// }
+enum enday {Sunday=1, Monday=2,Tuesday=3,Wednesday=4,Thursday=5,Friday=6,Saturday=7};
+enday enfun()
+{
+    dayfun();
+    int s;
+    cin >>s;
+    enday day;
+day=(enday)s;
+return day;
+//cout << day << endl;
+}
+void printfun(enday &day)
+{
+   day=enfun();
+    switch (day)
+    {
+    case enday::Sunday:
+    cout <<"the day is sunday";
+        /* code */
+        break;
+      case enday::Monday:
+    cout <<"the day is monday";
+        /* code */
+        break;
+          case enday::Tuesday:
+    cout <<"the day is tuesday";
+        /* code */
+        break;
+          case enday::Wednesday:
+    cout <<"the day is wednesday";
+        /* code */
+        break;
+          case enday::Thursday:
+    cout <<"the day is thursday";
+        /* code */
+        break;
+          case enday::Friday:
+    cout <<"the day is friday";
+        /* code */
+        break;
+          case enday::Saturday:
+    cout <<"the day is saturday";
+        /* code */
+        break;
+      
+
+    default:
+    cout << "sorry :-(";
+        break;
+    }
+}
+int main() {
+enday day;
+    printfun(day);
+
+// int s;
+// encolor color;
+
+// cin >>s;
+
+// color=(encolor)s;
+// switch (color)
+// {
+// case encolor::blue:
+//     /* code */cout << " color is blue \n ";
+//     break;
+// case encolor::red:
+// cout << " color is red \n";
+// break;
+// case encolor::green: 
+// cout << "color is green \n";
+// break;
+// case encolor::yellow :
+// cout << "color is yellew \n";
+// break;
+// default:
+// cout << "sorry :-( \n";
+//     break;
+// }
 // if(color==encolor::red)
 // {
 //     system("color 4F");
