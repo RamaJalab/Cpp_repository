@@ -268,44 +268,54 @@ using namespace std;
 //     }
 // }
 
-void readArrayFun(int Array[100],int &length)
-{
-    cout << "please enter your many numbers (between 1-->100 please) \n";   
-    cin >> length;
-    for (int i = 0; i <= length-1; i++)
-    {
-        cout <<"number " << i+1 << " : "<< endl;/* code */
-        cin >> Array[i];
-    }
+// void readArrayFun(int Array[100],int &length)
+// {
+//     cout << "please enter your many numbers (between 1-->100 please) \n";   
+//     cin >> length;
+//     for (int i = 0; i <= length-1; i++)
+//     {
+//         cout <<"number " << i+1 << " : "<< endl;/* code */
+//         cin >> Array[i];
+//     }
 
-}
-void printArrayFun(int Array[100],int length)
-{
-    for (int i = 0; i <= length-1; i++)
-    {
-        cout << "number " << i+1 << " : " << Array[i] <<endl;
-    }
-}
-int SumFun(int Array[100],int length)
-{
-    int sum=0;
-     for (int i = 0; i <= length-1; i++)
-    {
-        sum+=Array[i];
-    }
-    return sum;
-}
-float AverageFun(int Array[100],int length)
-{
- return (float)SumFun(Array,length)/length;
-}
+// }
+// void printArrayFun(int Array[100],int length)
+// {
+//     for (int i = 0; i <= length-1; i++)
+//     {
+//         cout << "number " << i+1 << " : " << Array[i] <<endl;
+//     }
+// }
+// int SumFun(int Array[100],int length)
+// {
+//     int sum=0;
+//      for (int i = 0; i <= length-1; i++)
+//     {
+//         sum+=Array[i];
+//     }
+//     return sum;
+// }
+// float AverageFun(int Array[100],int length)
+// {
+//  return (float)SumFun(Array,length)/length;
+// }
 
 int main() {
-    int Array[100],length;
-    readArrayFun(Array,length);
-    printArrayFun(Array,length);
-cout << "sum your numbers is :" << SumFun(Array,length) << endl;
-cout << "average of your numbers is : " << AverageFun(Array,length) << endl;
+    for (int i = 1; i <= 10; i++)
+    {
+        cout << "i =" << i << endl;
+        for (int j = 1; j <= 10; j++)
+        {
+           cout << i << "*" << j << "=" <<i*j <<endl; /* code */
+        }
+        cout << "*************\n"; /* code */
+    }
+    
+//     int Array[100],length;
+//     readArrayFun(Array,length);
+//     printArrayFun(Array,length);
+// cout << "sum your numbers is :" << SumFun(Array,length) << endl;
+// cout << "average of your numbers is : " << AverageFun(Array,length) << endl;
     // int i;
     // for (i=0;i<=10;i++)
     // {
