@@ -299,19 +299,32 @@ using namespace std;
 // {
 //  return (float)SumFun(Array,length)/length;
 // }
+int readfun(int a,int b)
+{
+    int num;
+ 
+    do
+    {
+    cout << "please enter your number : \n ";
+    cin >> num;
+        /* code */
+    } while (num <a || num>b);
+    return num;
+}
 
 int main() {
-    int num;
-    cout << "enter your positive number please :\n";
-    cin >>num;
-    while (num <0)
-    {
-        cout << "Warning:your number is negative !\n";
-        cout << "enter your number again \n ";
-        cin >>num;
-        /* code */
-    }
-    cout << "your number is : " << num << endl;
+cout << readfun(1,10);
+    // int num;
+    // cout << "enter your positive number please :\n";
+    // cin >>num;
+    // while (num <0)
+    // {
+    //     cout << "Warning:your number is negative !\n";
+    //     cout << "enter your number again \n ";
+    //     cin >>num;
+    //     /* code */
+    // }
+    // cout << "your number is : " << num << endl;
 
     // for (int i = 1; i <= 10; i++)
     // {
