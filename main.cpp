@@ -320,19 +320,26 @@ int main() {
 
     for (int i = 0; i < 10; i++) {
         cin >> arr[i];
-        if (arr[i]==20)
-        {
-            cout <<"stop!! \n";
-              for (int j=0;j< 10; j++) {
-        arr[j] = 0;
-    }
+    //     if (arr[i]==20)
+    //     {
+    // //         cout <<"stop!! \n";
+    // //           for (int j=0;j< 10; j++) {
+    // //     arr[j] = 0;
+    // // }
     
-        break;
-        }
+    //     // break;
+    //     continue;
+    //     }
     }
 
     cout << "the value is : \n";
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 10; i++)
+     {
+    
+        if(arr[i]==20)
+        {
+            continue;
+        }
         cout << arr[i] << " ";
     }
 
