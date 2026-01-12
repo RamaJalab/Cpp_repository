@@ -298,22 +298,53 @@ using namespace std;
 // float AverageFun(int Array[100],int length)
 // {
 //  return (float)SumFun(Array,length)/length;
-// }
-int readfun(int a,int b)
-{
-    int num;
+// // }
+// int readfun(int a,int b)
+// {
+//     int num;
  
-    do
-    {
-    cout << "please enter your number : \n ";
-    cin >> num;
-        /* code */
-    } while (num <a || num>b);
-    return num;
-}
+//     do
+//     {
+//     cout << "please enter your number : \n ";
+//     cin >> num;
+//         /* code */
+//     } while (num <a || num>b);
+//     return num;
+// }
 
 int main() {
-cout << readfun(1,10);
+
+    int arr[10];
+
+    cout << "enter your array please \n ";
+
+    for (int i = 0; i < 10; i++) {
+        cin >> arr[i];
+        if (arr[i]==20)
+        {
+            cout <<"stop!! \n";
+              for (int j=0;j< 10; j++) {
+        arr[j] = 0;
+    }
+    
+        break;
+        }
+    }
+
+    cout << "the value is : \n";
+    for (int i = 0; i < 10; i++) {
+        cout << arr[i] << " ";
+    }
+
+  
+
+
+
+
+
+
+
+// cout << readfun(1,10);
     // int num;
     // cout << "enter your positive number please :\n";
     // cin >>num;
