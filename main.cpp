@@ -301,15 +301,27 @@ using namespace std;
 // }
 
 int main() {
-    for (int i = 1; i <= 10; i++)
+    int num;
+    cout << "enter your positive number please :\n";
+    cin >>num;
+    while (num <0)
     {
-        cout << "i =" << i << endl;
-        for (int j = 1; j <= 10; j++)
-        {
-           cout << i << "*" << j << "=" <<i*j <<endl; /* code */
-        }
-        cout << "*************\n"; /* code */
+        cout << "Warning:your number is negative !\n";
+        cout << "enter your number again \n ";
+        cin >>num;
+        /* code */
     }
+    cout << "your number is : " << num << endl;
+
+    // for (int i = 1; i <= 10; i++)
+    // {
+    //     cout << "i =" << i << endl;
+    //     for (int j = 1; j <= 10; j++)
+    //     {
+    //        cout << i << "*" << j << "=" <<i*j <<endl; /* code */
+    //     }
+    //     cout << "*************\n"; /* code */
+    // }
     
 //     int Array[100],length;
 //     readArrayFun(Array,length);
